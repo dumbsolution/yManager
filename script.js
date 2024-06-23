@@ -31,7 +31,7 @@ function displayData(data) {
 
                 const link1 = createLink('Download', value.Link_1);
                 const link2 = createLink('Mirror', value.Link_2);
-                const mirror = createLink('Mirror 2', value.Mirror);
+                // const mirror = createLink('Mirror 2', value.Mirror);
 
                 versionDiv.appendChild(link1);
                 versionDiv.appendChild(document.createTextNode(' '));
@@ -43,6 +43,10 @@ function displayData(data) {
 
                 // versionDiv.appendChild(document.createTextNode('   '));
                 // versionDiv.appendChild(mirror);
+
+                if (key === 'Wave_Patched') {
+                    versionDiv.classList.add('wave');
+                }
             }
 
             versionsContainer.appendChild(versionDiv);

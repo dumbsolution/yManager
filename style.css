@@ -102,3 +102,19 @@ body {
 .button-link:hover {
     background-color: #1ED760;
 }
+
+.wave {
+    background-color: #101012;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.402);
+}
+
+.wave a {
+    border: 2px solid #0ff;
+    border-radius: 0.3em;
+    background-color: #00000000;
+    padding: 15px 38px;
+}
+
+.wave a:hover {
+    background-color: rgba(0, 255, 255, 0.231);
+}
